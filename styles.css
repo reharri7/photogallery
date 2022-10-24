@@ -1,0 +1,156 @@
+body {
+    width: 1310px;
+    background-color: #000000;
+    margin: 0 auto;
+    font-family: Arial, serif;
+}
+
+h1 {
+    height: 40px;
+    color: #007D7B;
+    display: inline-block;
+    cursor: pointer;
+}
+nav li {
+    display: inline-flex;
+}
+nav {
+    width: 450px;
+    float: right;
+}
+nav a {
+    padding: 20px;
+    border-radius: 10px;
+    width: 80px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+nav a:hover {
+    color: #007D7B;
+}
+[href="#top"] {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #007D7B;
+}
+[href="#top"]:hover {
+    color: #007D7B;
+    background-color: white;
+}
+main {
+    background-color: #ffffff;
+    padding: 10px;
+}
+#about img {
+    width: 850px;
+    float: left;
+}
+#about h2, #about p {
+    width: 420px;
+    float: right;
+    text-align: right;
+}
+#about h2, #gallery h2, #contact h2 {
+    margin: 0;
+    font-size: 40px;
+}
+#gallery {
+    clear: both;
+}
+#gallery p {
+    font-size: 20px;
+    margin: 0;
+  }
+#gallery img {
+    width: 420px;
+    height: 218px;
+    margin: 5px 0 0 5px;
+}
+.image-container {
+    position: relative;
+    display: inline-flex;
+}
+.image-container span {
+    position: absolute;
+}
+.bottom-left {
+    bottom: 8px;
+    left: 16px;
+}
+.top-left {
+    top: 8px;
+    left: 16px;
+}
+.top-right {
+    top: 8px;
+    right: 16px;
+}
+.bottom-right {
+    bottom: 8px;
+    right: 16px;
+}
+.white {
+    color: white;
+}
+.black {
+    color: black;
+}
+#row-two img {
+    height: 630px;
+}
+img:focus {
+    outline: black;
+}
+#contact {
+    margin: 0 auto;
+    width: 850px;
+    text-align: center;
+}
+#contact h2 {
+    color: white;
+}
+#contact p {
+    font-size: 20px;
+    color: white;
+}
+
+#contact input {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+#contact label {
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+}
+input::placeholder {
+    color: #007D7B;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+#submit {
+    margin: 5px auto !important;
+    background-color: #007D7B;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+footer {
+    text-align: center;
+    margin-bottom: 50px;
+}
+footer small {
+    color: white;
+    font-size: 16px;
+}
