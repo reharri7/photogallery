@@ -54,6 +54,9 @@ main {
     float: right;
     text-align: right;
 }
+#about p {
+    margin: 0;
+}
 #about h2, #gallery h2, #contact h2 {
     margin: 0;
     font-size: 40px;
@@ -74,8 +77,18 @@ main {
     position: relative;
     display: inline-flex;
 }
-.image-container span {
+.image-container figcaption {
     position: absolute;
+}
+figure {
+    padding: 0;
+    margin: 0;
+}
+img[src*="Iran"], img[src*="Ireland"], img[src*="Italy"] {
+    height: 630px;
+}
+#gallery > figure:nth-child(n+6):nth-child(-n+8) > img {
+    height: 630px;
 }
 .bottom-left {
     bottom: 8px;
@@ -99,9 +112,6 @@ main {
 .black {
     color: black;
 }
-#row-two img {
-    height: 630px;
-}
 img:focus {
     outline: black;
 }
@@ -116,21 +126,25 @@ img:focus {
 #contact p {
     font-size: 20px;
     color: white;
+    margin-top: 0;
 }
 
 #contact input {
     display: block;
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
+    padding: 10px;
+
 }
 #contact label {
     display: block;
     color: white;
     text-transform: uppercase;
     font-size: 16px;
-    margin: 0 auto;
-    width: 50%;
+    width: 100%;
     text-align: left;
+    font-weight: lighter;
+    margin: 5px 0;
 }
 input::placeholder {
     color: #007D7B;
@@ -144,11 +158,11 @@ input::placeholder {
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    padding: 5px;
+    width: 50% !important;
 }
 footer {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px 0 20px 0;
 }
 footer small {
     color: white;
